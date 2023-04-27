@@ -1,0 +1,40 @@
+<form>
+  <label for="password">Mot de passe :</label><br>
+  <input type="text" id="password" name="password"><br>
+  <input type="button" value="Générer" onclick="generatePassword()">
+</form> 
+
+<script>
+function generatePassword() {
+    // Définissez les caractères autorisés dans le mot de passe
+    const allowedCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{};':\"<>,.?/|\\~`";
+  
+    // Générez un mot de passe aléatoire de 16 caractères
+    let password = "";
+    for (let i = 0; i < 16; i++) {
+      password += allowedCharacters.charAt(Math.floor(Math.random() * allowedCharacters.length));
+    }
+  
+    // Mettez à jour le champ de saisie du mot de passe avec le mot de passe généré
+    document.getElementById("password").value = password;
+  }
+  </script>
+  <script>
+    function generatePassword() {
+  // Définissez les caractères autorisés dans le mot de passe
+  const allowedCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{};':\"<>,.?/|\\~`";
+
+  // Générez un mot de passe aléatoire de 16 caractères
+  let password = "";
+  for (let i = 0; i < 16; i++) {
+    password += allowedCharacters.charAt(Math.floor(Math.random() * allowedCharacters.length));
+  }
+
+  // Mettez à jour le champ de saisie du mot de passe avec le mot de passe généré
+  document.getElementById("password").value = password;
+
+  // Rafraîchissez la page
+  location.reload();
+}
+
+  </script>
