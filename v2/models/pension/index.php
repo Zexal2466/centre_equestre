@@ -25,7 +25,7 @@
                 <h1 class='text-center'>Ajouter une pension</h1>
                 <a href="create.php" class="">Ajouter une pension</a>
                 <h1 class='text-center'>Liste des pensions</h1>
-                <table class=" table table-striped table-dark w-75 mx-auto mb-5">
+                <table class=" table table-striped table-white w-75 mx-auto mb-5">
                     <thead>
                         <th>ID</th>
                         <th>Libelle</th>

@@ -77,7 +77,7 @@ require('../headerDashboard.php') ?>
                 </div>
             </div>
             <div class="subItem-right-4">
-                <label>Numéro Licence FFE </label>
+                <label>Numéro Licence FFE</label>
                 <input type="text" name="licence" value="<?= $cavalier['numeroLicence'] ?>">
             </div>
             <div class="subItem-right-5">
@@ -131,7 +131,7 @@ require('../headerDashboard.php') ?>
 
                 <button class="btn btn-next" name="Update">SAUVEGARDER</button>
                </div> -->
-         </div>
+            </div
 </div>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
