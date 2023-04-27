@@ -37,9 +37,9 @@ require('../headerDashboard.php') ?>
             <?php
             foreach ($cavFindId as $cavalier) {
             ?>
-
+        <div class="container-grid">
                <!-- action="../../Models/classes/Cavalier.php" -->
-        <form class="items items-form" method="POST" action="traitement.php" enctype="multipart/form-data">
+         <form class="items items-form" method="POST" action="traitement.php" enctype="multipart/form-data">
             <div class="subItem-right-1">
                 <input type="text" name="ID_Personne" class="inputID" value="<?= $cavalier['ID_Personne'] ?>">
                 <div class="subItem-name">
@@ -77,7 +77,7 @@ require('../headerDashboard.php') ?>
                 </div>
             </div>
             <div class="subItem-right-4">
-                <label>Numéro Licence FFE</label>
+                <label>Numéro Licence FFE </label>
                 <input type="text" name="licence" value="<?= $cavalier['numeroLicence'] ?>">
             </div>
             <div class="subItem-right-5">
@@ -130,7 +130,8 @@ require('../headerDashboard.php') ?>
             <!--             <div class="subItem-right-6">
 
                 <button class="btn btn-next" name="Update">SAUVEGARDER</button>
-            </div> -->
+               </div> -->
+         </div>
 </div>
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
