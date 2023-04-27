@@ -14,7 +14,7 @@ if (isset($_GET['idConn'])) {
 }
 
 if (isset($_POST['Update'])) {
-    $usersUpdate = $oUsers->updateById($_POST["idConn"],$_POST['mail'], $_POST['mdp'], $_POST['role'], $_POST['idPersonne']);
+    $usersUpdate = $oUsers->updateById($_POST['idConn'],$_POST['mail'], $_POST['mdp'], $_POST['role'], $_POST['idPersonne']);
     header("Location: index.php");
 }
 

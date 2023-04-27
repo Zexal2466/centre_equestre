@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect("localhost","root","","phppot") ;
+$conn = mysqli_connect("localhost","root","","equestreproject_test") ;
 
 if (!$conn)
 {
